@@ -1,0 +1,45 @@
+_<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone-no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+	<title>My.List</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="_/css/jquery.mobile.css">
+	<link rel="stylesheet" href="_/css/main.css">
+	<!-- JS -->
+	<script src="_/js/jquery.js"></script>
+	<script src="_/js/jquery.mobile-1.2.0.js"></script>
+	<script src="cordova.ios.js"></script>
+	<script src="_/js/mustache.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="_/js/app.js"></script>
+	<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+</head>
+	<body onload="init()">
+			<div data-role="page" id="main">
+			<div data-role="header" class="logo">
+				<img src="_/img/logo.png" />
+			</div> <!-- header -->
+			<div data-role="content">
+				<ul id="notelist" data-role="listview">
+				</ul> <!-- notelist -->
+				<a href="#newnote" data-role="button" data-icon="plus">New Note</a>
+			</div> <!-- content -->
+			<div data-role="footer" data-theme="c">
+				<h2 class="offline">Offline Mode</h2>
+			</div> <!-- footer -->
+		</div> <!-- main -->
+		<div data-role="page" id="newnote">
+			<div data-role="header" class="logo">
+				<img src="_/img/logo.png" />
+			</div> <!-- logo -->
+			<div id="notedetailcontent" data-role="content">
+			</div> <!-- notedetailcontent -->
+			<div data-role="footer" data-theme="c">
+				<p>My.List!</p>
+			</div> <!-- footer -->
+		</div> <!-- newnote -->
+	</body>
+</html>
